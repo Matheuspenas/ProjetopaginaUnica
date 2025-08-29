@@ -5,48 +5,38 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>cadastro</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/cadrastro.css'>
     <script src='main.js'></script>
 </head>
 <body>
     <!-- Cabeçaraio da pagina -->
     <header>
-        <h1></h1>
+        <h1>Entre em contato conosco</h1>
     </header>
+
+    <main>
+        <form >
+            <h1>informe seu contato</h1>
     
-    <form >
-        <h1>informe seu contato</h1>
+            <div class="cada_nome">
+                <label for="LoginNome">Nome</label>
+                <input type="text" id="LoginNome" name="nome" placeholder="Digite seu nome" required />
+            </div>
+    
+            <div class="cada_email">
+                <label for="LoginEmail">Email para contato</label>
+                <input type="text" id="Email" name="nome" placeholder="Digite seu Email" required />
+            </div>
+    
+            <div class="cada_descricao">
+                <label for="descricao">Descrição</label>
+                <textarea id="descricao" name="descricao" rows="4" placeholder="Descreva a necessidade aqui..." required
+                maxlength="120"></textarea>
+            </div>
 
-        <div class="cada_nome">
-            <label for="LoginNome">Nome</label>
-            <input type="text" id="LoginNome" name="nome" placeholder="Digite seu nome" required />
-        </div>
-
-        <div class="cada_email">
-            <label for="LoginEmail">Email para contato</label>
-            <input type="text" id="Email" name="nome" placeholder="Digite seu Email" required />
-        </div>
-
-        <div class="cada_tipo">
-            <label for="Tipo">Tipo da necessidade</label>
-            <select id="Tipo" required>
-                <option value="">Selecione...</option>
-                <option value="Educação">Educação</option>
-                <option value="Saúde">Saúde</option>
-                <option value="Meio Ambiente">Meio Ambiente</option>
-                <option value="Doação de Roupas">Doação de Roupas</option>
-                <option value="Doação de Alimentos">Doação de Alimentos</option>
-                <option value="Outros">Outros</option>
-            </select>
-        </div>
-
-        <div class="cada_descricao">
-            <label for="descricao">Descrição</label>
-            <textarea id="descricao" name="descricao" rows="4" placeholder="Descreva a necessidade aqui..." required
-            maxlength="120"></textarea>
-            <small id="contador">0 / 120</small>
-        </div>
-    </form>
+            <button id="Salvar" type="submit">Enviar</button>
+        </form>
+    </main>
 
     <footer>
       <p>&copy; 2025 | ONGlink | Todos os direitos reservados</p>
